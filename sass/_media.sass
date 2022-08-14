@@ -3,7 +3,7 @@
     nav
         ul
             li
-                padding-right: 13px
+                padding-right: 8px
 
     .job_invintation
         h1
@@ -29,27 +29,47 @@
                 width: 90%
 
 @media (max-width: 991px)
-    nav
-        ul
-            line-height: 20px
-            li
-                padding-right: 10px
-                a
-                    font-size: 10px
+    .burger_invisible
+        display: block
+    .sidebar
+        position: fixed
+        height: 100vh
+        width: 50% 
+        background-color: rgba(0, 0, 0, 0.8)
+        top: 0
+        left: -100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding: 10vh 0
+        transition: 0.5s all
+        &_active
+            left: 0
+        li
+            border-right: none
+            a
+                font-size: 18px
+    .burger
+        &_active
+            span
+                background-color: burlywood
     
     .subheader
         .sub_a
             img 
-                padding-top: 21px 
+                padding-top: 11px 
             .subreader_descr
                 font-size: 12px  
         .call_us 
+            padding-top: 11px
             a
                 font-size: 18px
         &_btn
             margin-top: 21px
             width: 100%
             height: 46px
+            line-height: 18px
         
     .job_invintation
         h1
@@ -136,7 +156,6 @@
             a
                 font-size: 14px
         .two
-            width: 389px
             a
                 margin-top: 10px
                 font-size: 11px
@@ -150,30 +169,6 @@
         display: none
     .invisible
         display: block
-    .sidebar
-        position: fixed
-        height: 100vh
-        width: 50% 
-        background-color: rgba(0, 0, 0, 0.8)
-        top: 0
-        left: -100%
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: space-between
-        padding: 10vh 0
-        transition: 0.5s all
-        &_active
-            left: 0
-        li
-            border-right: none
-            a
-                font-size: 18px
-    .burger
-        &_active
-            span
-                background-color: burlywood
-
     .subheader
         padding-top: 10px
         .invisible
@@ -234,6 +229,11 @@
     .world
         h2
             font-size: 28px
+
+    footer
+        .two
+            flex-wrap: wrap
+            width: 289px
 
 @media (max-width: 575px)
 
@@ -296,7 +296,6 @@
             a
                 font-size: 14px
         .two
-            width: 329px
             a
                 margin-top: 10px
                 font-size: 11px
